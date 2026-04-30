@@ -1,11 +1,29 @@
+/*////////////////////////////
+    Table of Contents
+    1. Imports
+    2. Global Styles
+    3. Typography
+    4. Areas
+        4.1 Recipe Card
+        4.2 Card Header
+        4.3 Card Body
+        4.4 Card Footer
+
+ ////////////////////////////*/
+/* ------------------------------- 1. Imports -------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
-.recipe-card {
-    /* "auto" aan de zijkanten zorgt ervoor dat het element in het midden komt te staan*/
-    margin: 80px auto;
-    /* Dit element heeft een vaste breedte van 350 pixels */
-    width: 350px;
+
+/* ------------------------------- 2. Gobal Styles ----------------------- */
+* {
+    padding: 0;
+    margin: 0;
 }
 
+img {
+    width: 100%;
+}
+
+/* ------------------------------- 3. Typography ------------------------- */
 /* - Vul dit document aan met jouw eigen css! - */
 /*(lichtgrijs `#F7F7F7` en donkergrijs `#d3d3d3`)*/
 body {
@@ -13,40 +31,62 @@ body {
     box-sizing: border-box;
 }
 
-article {
-    position: relative;
+.icon {
+    width: 22px;
+    height: 22px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+/* ------------------------------- 4. Areas ------------------------------ */
+/* --------------------- 4.1 Recipe Card -------------------- */
+.recipe-card {
+    /* "auto" aan de zijkanten zorgt ervoor dat het element in het midden komt te staan*/
+    margin: 80px auto;
+    /* Dit element heeft een vaste breedte van 350 pixels */
+    width: 350px;
+
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.15);
     overflow: hidden;
 }
 
-img {
-    width: 100%;
-}
-
+/* --------------------- 4.2  Card Header -------------------- */
 .card-header{
     padding: 0;
+    position: relative;
 }
-.card-body {
-    background-color: #F7F7F7 ;
-
-}
-
-.card-body .icon img {
-    margin: -1px;
-}
-
-.card-header .icon{
+.card-header .icon-heart{
     position : absolute;
     top: 0;
     right: 0;
     color: white;
     z-index: 10;
+    margin-top: 10px;
+    margin-right: 10px;
 }
 
-.icon {
-    width: 30px;
-    height: 30px;
-    padding-left: 8px;
-    padding-right: 8px;
+/* --------------------- 4.3  Card Body -------------------- */
+.card-body {
+    background-color: #F7F7F7 ;
+    padding: 3px 0 3px 0;
+
 }
+.card-body span {
+    margin-left: 10px;
+}
+.card-body .icon img {
+    margin: -1px;
+}
+
+
+
+/* --------------------- 4.2  Card Footer -------------------- */
+
+.card-footer {
+    padding: 20px;
+}
+
+
+
