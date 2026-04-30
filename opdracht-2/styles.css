@@ -1,8 +1,112 @@
+/*////////////////////////////
+    Table of Contents
+    1. Imports
+    2. Global Styles
+    3. Typography
+    4. Areas
+        4.1 Product
+        4.2 Product Image
+        4.3 Product Info
+
+
+ ////////////////////////////*/
+/* ------------------------------- 1. Imports -------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* ------------------------------- 2. Gobal Styles ----------------------- */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+:root{
+    --white: #fff;
+    --black: #000;
+    --orange: #DE6127;
+    --light-grey: #e8e8e8;
+    --dark-grey: #737373;
+
+    /*color balls*/
+    --pink: #faa0c7;
+    --charcoal: #272729;
+    --beige: #928471;
+    --offwhite: #c2c2b4
+
+}
+
+/* ------------------------------- 3. Typography ------------------------- */
+body {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.icon {
+    width: 22px;
+    height: 22px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+/* ------------------------------- 4. Areas ------------------------------ */
+/* --------------------- 4.1 Product -------------------- */
 .product {
     /* "auto" aan de zijkanten zorgt ervoor dat het element in het midden komt te staan*/
     margin: 80px auto;
     /* Dit element heeft een vaste breedte van 350 pixels */
     width: 350px;
+    position: relative;
 }
 
-/* - Vul dit document aan met jouw eigen css! - */
+/* ------------------ 4.1 Product Image ----------------- */
+.product-image .icon-heart {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 15px;
+    margin-right: 10px;
+}
+
+
+.product-image span {
+    position: absolute;
+    top: 45px;
+    left: 0;
+
+    display: inline-block;
+    background-color: var(--light-grey) ;
+    color: #DE6127;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px;
+    margin-left: -50px;
+    transform: rotate(90deg);
+}
+
+/* ------------------ 4.2 Product Info ----------------- */
+.product-info > p:first-of-type{
+    color: var(--dark-grey);
+}
+
+.product-info-balls{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.color1 {
+     background-color: var(--pink);
+ }
+.color2 {
+    background-color: var(--charcoal);
+}
+.color3 {
+    background-color: var(--beige);
+}
+.color4 {
+    background-color: var(--offwhite);
+}
