@@ -61,8 +61,6 @@ body {
     position : absolute;
     top: 0;
     right: 0;
-    color: white;
-    z-index: 10;
     margin-top: 10px;
     margin-right: 10px;
 }
@@ -71,6 +69,7 @@ body {
 .card-body {
     background-color: #F7F7F7 ;
     padding: 3px 0 3px 0;
+    margin-top: -6px;
 
 }
 .card-body span {
